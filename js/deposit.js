@@ -10,6 +10,9 @@ document.getElementById('depositBtn').addEventListener('click',function(){
     const currentDepositTotal = totalPreviousDeposit + newAmountDepossitField;
     deposit.innerText = currentDepositTotal; 
     //clear the deposit value 
+     // add curent balance 
+    const currentBalanceElement = document.getElementById('currentBalanceElement');
+    const currentBalanceElementString = parseFloat(currentBalanceElement);
     amountDeposit.value = ''; 
   
 
