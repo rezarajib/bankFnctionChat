@@ -4,7 +4,9 @@ document.getElementById('depositBtn').addEventListener('click',function(){
     const newAmountDepossitField = parseFloat(newAmountDepossitFieldString);
     console.log(typeof newAmountDepossitField);
     const deposit = document.getElementById('depositTotal');
-    const totalPreviousDeposit = deposit.innerText;
+    const totalPreviousDepositString = deposit.innerText;
+    const totalPreviousDeposit = parseFloat(totalPreviousDepositString)
+    console.log(typeof totalPreviousDeposit);
     const currentDepositTotal = totalPreviousDeposit + newAmountDepossitField;
     deposit.innerText = currentDepositTotal; 
     //clear the deposit value 
