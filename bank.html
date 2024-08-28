@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto py-8">
@@ -16,7 +17,7 @@
             </div>
             <div class="bg-yellow-400 text-white p-6 rounded-lg shadow-lg text-center">
                 <h2 class="text-xl">Withdraw</h2>
-                <p class="text-2xl mt-2">$00</p>
+                <p class="text-2xl mt-2">$ <span id="withdraw-Element">00</span></p>
             </div>
             <div class="bg-purple-400 text-white p-6 rounded-lg shadow-lg text-center">
                 <h2 class="text-xl">Balance</h2>
@@ -33,13 +34,14 @@
             </div>
             <div class="bg-blue-400 p-6 rounded-lg shadow-lg">
                 <h2 class="text-xl text-white mb-4">Please Withdraw</h2>
-                <input type="number" placeholder="$ Amount you want to withdraw" class="w-full p-2 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 text-center">
+                <input id="withdraw-field" type="number" placeholder="$ Amount you want to withdraw" class="w-full p-2 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <button id="withdraw-btn" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 text-center">
                         Withdraw
                     </button>
             </div>
         </div>
     </div>
     <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 </html>
